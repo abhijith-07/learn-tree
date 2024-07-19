@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-section">
+                <span class="logo">LT</span>
+                <span class="learn-tree">LearnTree</span>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Background Image -->
+        <div class="background"></div>
+
+        <!-- Registration Form -->
+        <div class="register-form">
+            <h1>Register</h1>
+            <form action="" method="post">
+                <div class="form-field">
+                    <label for="first-name" class="form-label">First name:</label>
+                    <input class="form-control" type="text" name="first-name" id="first-name" placeholder="eg: Alice">
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="last-name" class="form-label">Last name:</label>
+                    <input class="form-control" type="text" name="last-name" id="last-name" placeholder="eg: John">
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="username" class="form-label">Username:</label>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="eg: alicejohn">
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="email" class="form-label">Email:</label>
+                    <input class="form-control" type="text" name="email" id="email" placeholder="eg:alice@abc.com">
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="password" class="form-label">Password:</label>
+                    <input class="form-control" type="password" name="password" id="password"
+                        placeholder="Must have 8 characters">
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="confirm-password" class="form-label">Confirm password:</label>
+                    <input class="form-control" type="password" name="confirm-password" id="confirm-password"
+                        placeholder="Confirm your password">
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <span class="form-label">Gender:</span>
+                    <div class="gender-fields">
+                        <div class="gender male">
+                            <input type="radio" name="gender" id="male" value="male" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gender female">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="gender other">
+                            <input type="radio" name="gender" id="other" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="date-of-birth" class="form-label">Date of birth:</label>
+                    <input type="date" name="date-of-birth" id="date-of-birth">
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="courses" class="form-label">Course:</label>
+                    <input type="text" list="courses" name="courses" id="courses" placeholder="Qualified Course">
+                    <datalist id="courses">
+                        <option value="BSc"></option>
+                        <option value="BA"></option>
+                        <option value="MSc"></option>
+                        <option value="MA"></option>
+                    </datalist>
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="technical-skills" class="form-label">Technical skills</label>
+                    <div class="technical-skills">
+                        <div class="skill-c">
+                            <input type="checkbox" name="technical-skills" id="c">
+                            <label for="c">C</label>
+                        </div>
+                        <div class="skill-cpp">
+                            <input type="checkbox" name="technical-skills" id="cpp">
+                            <label for="cpp">C++</label>
+                        </div>
+                        <div class="skill-java">
+                            <input type="checkbox" name="technical-skills" id="java">
+                            <label for="java">Java</label>
+                        </div>
+                        <div class="skill-python">
+                            <input type="checkbox" name="technical-skills" id="python">
+                            <label for="python">Python</label>
+                        </div>
+                    </div>
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="state" class="form-label">State:</label>
+                    <select name="state" id="state" class="form-field">
+                        <option value="">Select your state</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Tamil Nadu">Tamil nadu</option>
+                    </select>
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="district" class="form-label">District:</label>
+                    <select name="district" id="district" class="form-field">
+                    </select>
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="address" class="form-label">Address:</label>
+                    <textarea class="form-control" name="address" id="address" rows="4"
+                        placeholder="Your address with pin code"></textarea>
+                    <div class="error-field">
+                        <p class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="form-field register">
+                    <button type="submit" id="register-btn">Register</button>
+                </div>
+            </form>
+            <div class="login-link">
+                Already have an account? <a href="login.html">Login</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

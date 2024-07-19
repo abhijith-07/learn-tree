@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LearnTree | Login</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo-section">
+                <span class="logo">LT</span>
+                <span class="learn-tree">LearnTree</span>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-btn">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+                <ul class="dropdown-content">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background"></div>    
+    <div class="container">
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="form">
+                <div>
+                    <label for="username"><i class="fa fa-user icon" aria-hidden="divue"></i></label>
+                    <input type="text" name="username" id="username" placeholder="eg: alice" required>
+                </div>
+                <div>
+                    <label for="password"><i class="fa-solid fa-key icon"></i></label>
+                    <input type="password" name="password" id="password" placeholder="eg: password" required>
+                </div>
+                <div align="center">
+                    <div colspan="2">
+                        <input type="submit" name="login" id="login" value="LOGIN">
+                    </div>
+                </div>
+                <div class="new-here">
+                    New Here? <a href="register.html">Register</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        Copyright @ abc 2024
+    </footer>
+</body>
+</html>
