@@ -49,3 +49,88 @@ nav ul a {
 nav ul a:hover {
     color: #d62801;
 }
+
+/* Contact */
+
+h1 {
+    display: flex;
+    height: 6rem;
+    font-size: 2.75rem;
+    padding-left: 4rem;
+    align-items: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 8rem 2rem;
+}
+
+.contact-details div {
+    width: 400px;
+    padding: 4rem 3rem;
+    background-color: #fff;
+    font-size: 1rem;
+    border: 1px solid #d62801;
+}
+
+.contact-details div i {
+    font-size: 2.5rem;
+    color: #d62801;
+    padding: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d62801;
+    color: #faf1ef;
+    padding: 4rem 2rem;
+}
+
+.contact-form .heading {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.contact-form .heading .title {
+    font-size: 3.5rem;
+    letter-spacing: 0.125rem;
+    margin: 1rem 0;
+}
+
+.message-section {
+    display: grid;
+    width: 50%;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.message-section input {
+    height: 3rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.message-section .message-box {
+    grid-column: 1 / span 2;
+    height: 300px;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.message-section .send-container {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: right;
+}
+
+.send-container .send-btn {
+    padding: 0 4rem;
+    border: 1px solid #fff;
+    background-color: #541b0e;
+    color: #faf1ef;
+    font-weight: 800;
+}

@@ -86,7 +86,7 @@ form .form {
 .icon {
     position: absolute;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 0.25rem;
 }
 
@@ -118,6 +118,19 @@ input:focus {
 
 .new-here {
     padding: 1rem;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field .view-hide-btn {
+    position: absolute;
+    left: 12rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 footer {

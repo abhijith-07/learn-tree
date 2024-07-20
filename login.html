@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>LearnTree | Login</title>
 </head>
 <body>
@@ -34,17 +35,18 @@
     <div class="background"></div>    
     <div class="container">
         <h1>Login</h1>
-        <form action="" method="post">
+        <form action="" method="post" class="login-form">
             <div class="form">
                 <div>
                     <label for="username"><i class="fa fa-user icon" aria-hidden="divue"></i></label>
                     <input type="text" name="username" id="username" placeholder="eg: alice" required>
                 </div>
-                <div>
+                <div class="password-field">
                     <label for="password"><i class="fa-solid fa-key icon"></i></label>
                     <input type="password" name="password" id="password" placeholder="eg: password" required>
+                    <button type="button" onclick="changePwdView()" class="view-hide-btn" id="view-hide-btn"><i class="fa-regular fa-eye"></i></button>
                 </div>
-                <div align="center">
+                <div>
                     <div colspan="2">
                         <input type="submit" name="login" id="login" value="LOGIN">
                     </div>
@@ -57,7 +59,32 @@
     </div>
 
     <footer>
-        Copyright @ abc 2024
+        Copyright © 2024 LearnTree
     </footer>
+
+    <script>
+        const form = document.querySelector(".login-form");
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+        });
+
+        let viewHidePassword = false;
+        function changePwdView() {
+            let passwordInput = $("#password");
+            let icon = $("#view-hide-btn i");
+
+            if (viewHidePassword === false) {
+                passwordInput.attr("type", "text");
+                icon.removeClass("fa-regular fa-eye");
+                icon.addClass("fa-regular fa-eye-slash");
+                viewHidePassword = true;
+            } else {
+                passwordInput.attr("type", "password");
+                icon.removeClass("fa-regular fa-eye-slash");
+                icon.addClass("fa-regular fa-eye");
+                viewHidePassword = false;
+            }
+        }
+    </script>
 </body>
 </html>

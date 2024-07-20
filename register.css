@@ -17,7 +17,7 @@ body {
     background-image: url("assets/img/computer.jpg");
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
+    filter: brightness(50%);
     z-index: -1;
 }
 
@@ -67,7 +67,7 @@ ul a:hover {
     color: #fff;
     width: 50%;
     margin: 1rem auto 0;
-    padding: 1rem 2rem;
+    padding: 0 1rem;
     background-color: #19161698;
 }
 
@@ -105,6 +105,20 @@ ul a:hover {
     position: absolute;
     color: #ff3232;
     font-size: 0.75rem;
+}
+
+.view-hide {
+    position: relative;
+}
+
+.view-hide .view-hide-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: -1.25rem;
+    left: calc(100% - 1.5rem);
+    color: #fff;
+    cursor: pointer;
 }
 
 .gender-fields {

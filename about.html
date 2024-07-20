@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>LearnTree | About</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
         </nav>
     </header>
     <main>
-        <h1 class="heading">About Us</h1>
+        <h1 class="heading">About</h1>
         <div class="about-wrapper">
             <div class="container">
                 <div class="content-wrapper">
@@ -31,10 +33,22 @@
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque ipsum blanditiis rerum rem sunt maiores unde dicta sequi voluptatem sed aperiam quos assumenda inventore, aliquid molestiae adipisci ut quibusdam!</p>
                 </div>
                 <div class="main-image">
-                    <img src="assets/img/learning-about.jpg" alt="">
+                    <img src="assets/img/learning-about.jpg" alt="Learning about LearnTree">
                 </div>
             </div>
         </div>
     </main>
+
+    <footer>
+        Copyright © 2024 LearnTree
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $(".heading").delay(500).fadeTo(500, 1);
+            $(".content-wrapper").delay(1000).animate({left: "0px", opacity: 1}, 1000);
+            $(".main-image").delay(1000).animate({right: "0px", opacity: 1}, 1000);
+        });
+    </script>
 </body>
 </html>

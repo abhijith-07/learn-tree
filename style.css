@@ -17,13 +17,19 @@ body {
     background-image: url("assets/img/learning.jpg");
     background-size: cover;
     background-position: center;
-    filter: blur(1px);
+    filter: brightness(30%);
     box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.974);
     z-index: -1;
 }
 
 /* Navbar */
 nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.navigation {
     background-color: #2a2a2a65;
     padding: 1rem;
     display: flex;
@@ -63,11 +69,25 @@ nav ul a:hover {
     color: #d62801;
 }
 
+a.login-btn {
+    background-color: #d62801;
+}
+
+a.login-btn:hover {
+    color: aliceblue;
+    animation: change-color 1s forwards;
+}
+
+@keyframes change-color {
+    0% {background-color: #d62801;}
+    100% {background-color: #f4e0db; color: #d62801;}
+}
+
+/* Home content */
 .content {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
     height: 90vh;
     color: #fff;
     text-align: center;
@@ -87,7 +107,7 @@ nav ul a:hover {
     margin: 2rem 0;
 }
 
-.content-wrapper .more-courses-btn {
+.content-wrapper .our-courses-btn {
     text-decoration: none;
     border: none;
     padding: 1rem 3rem;
@@ -100,7 +120,7 @@ nav ul a:hover {
 /* Services */
 
 .services-container {
-    margin-top: 5rem;
+    margin: 8rem 0;
     display: flex;
     flex-direction: column;
     padding: 0 3rem;
@@ -138,17 +158,71 @@ nav ul a:hover {
     display: flex;
     flex-direction: column;
     background-color: #f4f4f4;
+    padding: 5rem 0;
+}
+
+.courses-container .heading-section {
+    text-align: center;
+}
+
+.heading-section p {
+    color: #d62801;
+}
+
+.heading-section h2 {   
+    font-size: 2rem;
+    text-decoration: #d62801 underline;
 }
 
 .courses {
     display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+    padding: 0 5rem;
 }
 
 [class*="course-"] {
     background-color: #fff;
+    cursor: pointer;
+    width: 300px;
+    padding: 1rem;
 }
 
 [class*="course-"] img {
-    width: 300px;
+    width: 100%;
     height: 200px;
+}
+
+[class*="course-"] .course-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.price-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.price-date .date {
+    color: #555555;
+}
+
+.price-date .fee {
+    background-color: #d62801;
+    color: #f4e0db;
+    padding: 0.5rem 1rem;
+}
+
+footer {
+    color: aliceblue;
+    background-color: #2a2a2a65;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    bottom: 0;
+    margin-top: 2rem;
 }
